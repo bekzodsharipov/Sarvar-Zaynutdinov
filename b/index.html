@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvar Zaynutdinov</title>
+    <style>
+* {margin: 0;padding: 0;box-sizing: border-box;}body {background-color: #070707;}.container {max-width: 440px;width: 100%;margin: 0 auto;padding: 0 10px;padding-top: 0;display: flex;flex-direction: column;align-items: center;font-family: sans-serif;}.header {padding-top: 19px;width: 100%;display: flex;align-items: center;justify-content: center;margin-bottom: 26px;}.header__box {display: flex;align-items: center;gap: 17px;}.header__title {font-family: "Italianno", sans-serif;font-weight: 400;font-size: 24px;line-height: 19px;color: white;}.header__text {font-family: Arial, sans-serif;color: white;font-weight: 400;font-size: 14px;line-height: 100%;text-wrap: nowrap;}.title {font-family: "Neue Haas Grotesk Display Pro", sans-serif;font-weight: 700;font-size: clamp(41px, 12.9vw, 48px);line-height: 110%;text-align: center;text-transform: uppercase;background: linear-gradient(90.71deg, #FFFFFF 29.15%, #999999 105.48%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;color: transparent;margin-bottom: 6px;width: 100%;}.subtitle {font-family: "Neue Haas Grotesk Display Pro", sans-serif;font-weight: 400;font-size: clamp(22px, 7.5vw, 28px);line-height: 110%;background: linear-gradient(90.71deg, #FFFFFF 29.15%, #999999 105.48%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;color: transparent;margin-bottom: 20px;}.center {position: relative;width: 100%;display: flex;align-items: center;justify-content: center;}.center__bg {position: absolute;left: 50%;bottom: -51px;transform: translate(-55.4%);z-index: -1;}.expert__img {object-fit: contain;max-width: 320px;width: 100%;height: auto;position: relative;z-index: 15;margin-right: 15px;}.event__btn {text-decoration: none;cursor: pointer;max-width: 316px;width: 100%;display: flex;align-items: center;justify-content: center;border: none;position: relative;border-radius: 8px;background: linear-gradient(90deg, #FFE9C8 0%, #FFD9AD 27%, #FFDDB5 51%, #FFDDB5 75%, #FFCC8F 100%);box-shadow: 0px 4px 8px 0px #00000040;padding: 25px 0;z-index: 20;font-family: Arial, sans-serif;font-weight: 700;font-size: 16px;line-height: 21.7px;color: #9D641E;}.event__btn__img {width: 100%;height: auto;}.event__info {display: flex;flex-direction: column;align-items: center;justify-content: center;margin-bottom: 9px;background-color: white;border-radius: 25px;padding: 20px 16px 18px 16px;max-width: 354px;width: 100%;position: relative;z-index: 20;margin-bottom: 14px;}.event__info__title {font-family: "Big Shoulders Display", sans-serif;font-weight: 600;font-size: 36px;line-height: 150%;text-align: center;position: relative;background: rgba(0, 0, 0, 0.7);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}.event__info__description {font-family: Arial, sans-serif;font-weight: 700;font-size: clamp(13px, 4vw, 15px);padding-top: 6.5px;line-height: 23px;margin-bottom: 13px;}.event__gift {display: flex;align-items: center;gap: 8px;}.event__gift p {font-family: Arial, sans-serif;font-weight: 400;font-size: clamp(10.5px, 3.3vw, 13px);line-height: 135%;}@media (max-width:380px) {.expert__img {margin-bottom: -1px;margin-right: 20px;}}@media (max-width:355px) {.event__info {padding: 20px 13px 18px 13px;}.event__gift img {width: 75px;height: 65px;}.expert__img {max-width: 285px;}}
+    </style>
+    <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/modal.css" />
+    </noscript>
+</head>
+
+<body>
+    <main>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="header__box">
+                    <h2 class="header__title">Sarvar Zaynutdinov</h2>
+                    <p class="header__text">
+                        Toshkent | 3-noyabr
+                    </p>
+                </div>
+            </div>
+
+            <h1 class="title">
+                7 ta bosqich
+            </h1>
+
+            <h2 class="subtitle">bilan biznesingiz sotuvini <br>
+                <b>2x oshirish</b> strategiyasi
+            </h2>
+
+            <img src="../a/images/speaker.avif" alt="Invertor rasmi" class="expert__img" decoding="async" loading="lazy"
+                width="320" height="248">
+
+            <div class="event__info">
+                <button class="event__btn registerBtn">
+                    Ro'yxatdan o'tish
+                </button>
+
+                <h3 class="event__info__description">Seminarga hoziroq ro'yxatdan o'ting!</h3>
+
+                <div class="event__gift">
+                    <img src="/a/images/gift.avif" width="83" height="75" loading="lazy" decoding="async" alt="gift">
+                    <p><b>Bonus:</b> Sotuvchilaringiz 2 barobar <br> ko’proq sotishi uchun <b>KPI tizim qo’yish <br>
+                            strategiyasi</b> nomli video darsligi</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+    <!-- Modal -->
+    <div id="registrationModal" class="homeModal" style="display: none">
+        <div class="homeModalOverlay"></div>
+        <div class="homeFormContainer">
+            <button class="closeButton" id="closeModalBtn" aria-label="Modalni yopish" title="Yopish">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+                    <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="homeFormTop">
+                <h1 class="homeFormTopTitle">
+                    Bepul qatnashish uchun ma'lumotlaringizni kiriting!
+                </h1>
+            </div>
+            <form id="registrationForm" name="contact-form">
+                <!-- ISM -->
+                <div class="HomeFormRow">
+                    <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+                    <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+                        autocomplete="name" />
+                    <p class="homeFormErrorText" id="nameError" style="display: none">
+                        ❌ Ismingizni kiriting!
+                    </p>
+                </div>
+
+                <!-- TELEFON -->
+                <div class="HomeFormRow">
+                    <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+
+                    <div class="phone-input-container">
+                        <!-- LEFT: country -->
+                        <button type="button" class="selected-country" id="selectedCountry">
+                            <span class="selected-flag" id="selectedCountryFlag">🇺🇿</span>
+
+                            <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                            <span class="selected-code" id="selectedCountryCodeText">+998</span>
+                        </button>
+
+                        <!-- dropdown -->
+                        <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+
+                        <!-- RIGHT: phone input (number span inside) -->
+                        <div class="phone-field">
+                            <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone"
+                                inputmode="numeric" placeholder="88 888 88 88" autocomplete="tel"
+                                style="border: none; background-color: transparent;padding-left: 5px;" />
+                        </div>
+                    </div>
+
+                    <p class="homeFormErrorText" id="phoneError" style="display:none">
+                        ❌ Telefon raqam mos emas!
+                    </p>
+                </div>
+
+                <button type="submit" class="HomeFormBtn" id="submitBtn">
+                    DAVOM ETISH
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <script defer src="../js/phoneFormatter.js"></script>
+    <script defer src="../js/app.js"></script>
+</body>
+
+</html>
